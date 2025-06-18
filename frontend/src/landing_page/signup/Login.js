@@ -32,7 +32,7 @@ const Login = () => {
     console.log("Form submitted");
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        `${process.env.REACT_APP_API_URL}/login`,
         {
           ...inputValue,
         },
@@ -44,7 +44,7 @@ const Login = () => {
         handleSuccess(message);
         localStorage.setItem("token", data.token); // optional
         setTimeout(() => {
-          window.location.href = "http://localhost:3000"; // If dashboard runs on different port
+          window.location.href = process.env.REACT_APP_DASHBOARD_URL;// If dashboard runs on different port
         }, 1000);
       } else {
         handleError(message);

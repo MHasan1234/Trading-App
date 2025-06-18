@@ -33,7 +33,7 @@ const Signup = () => {
     console.log("Form submitted");
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        `${process.env.REACT_APP_API_URL}/signup`,
         {
           ...inputValue,
         },
@@ -51,7 +51,7 @@ const Signup = () => {
         }
 
         setTimeout(() => {
-          window.location.href = "http://localhost:3000"; // redirect to dashboard
+          window.location.href = process.env.REACT_APP_DASHBOARD_URL; // redirect to dashboard
         }, 1000);
       } else {
         handleError(message);
