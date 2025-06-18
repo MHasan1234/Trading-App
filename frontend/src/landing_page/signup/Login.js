@@ -44,7 +44,7 @@ const Login = () => {
         handleSuccess(message);
         localStorage.setItem("token", data.token); // optional
         setTimeout(() => {
-          window.location.href = "http://localhost:3001"; // If dashboard runs on different port
+          window.location.href = "http://localhost:3000"; // If dashboard runs on different port
         }, 1000);
       } else {
         handleError(message);

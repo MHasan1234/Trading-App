@@ -1,12 +1,20 @@
 import React from "react";
+import StockWidget from "./StockWidget";
 
 const Summary = () => {
+  const username = localStorage.getItem("username");
+
   return (
     <>
       <div className="username">
-        <h6>Hi, User!</h6>
+        <h6>Hi, {username || "User"}!</h6>
         <hr className="divider" />
       </div>
+
+       <div className="p-2 bg-light border">
+        <StockWidget />
+      </div>
+
 
       <div className="section">
         <span>

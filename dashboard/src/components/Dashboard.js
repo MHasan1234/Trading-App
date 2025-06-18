@@ -9,7 +9,7 @@ import Positions from "./Positions";
 import Summary from "./Summary";
 import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
-
+import StockWidget from "./StockWidget"; 
 const Dashboard = () => {
 //   useEffect(() => {
 //     const token = localStorage.getItem("token");
@@ -23,6 +23,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <GeneralContextProvider>
         <WatchList />
+        
       </GeneralContextProvider>
 
       <div className="content">

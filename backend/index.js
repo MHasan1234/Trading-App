@@ -10,6 +10,7 @@ const {HoldingsModel}=require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
 const authRoute = require("./routes/AuthRoute");
+const stockRoutes = require("./routes/stockRoutes");
 
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
@@ -195,6 +196,7 @@ app.use(bodyParser.json());
 
 
 app.use("/", authRoute); 
+app.use("/api/stocks", stockRoutes);
 
 app.get("/allHoldings", async (req, res)=> {
     let allHoldings = await HoldingsModel.find({});

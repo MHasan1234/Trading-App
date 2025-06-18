@@ -51,7 +51,7 @@ const Signup = () => {
         }
 
         setTimeout(() => {
-          window.location.href = "http://localhost:3001"; // redirect to dashboard
+          window.location.href = "http://localhost:3000"; // redirect to dashboard
         }, 1000);
       } else {
         handleError(message);
