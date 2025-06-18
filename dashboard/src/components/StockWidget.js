@@ -5,7 +5,7 @@ function StockWidget({ symbol }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3002/api/stocks/${symbol}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/api/stocks/${symbol}`)
       .then((res) => setData(res.data))
       .catch((err) => console.error(err));
   }, [symbol]);
