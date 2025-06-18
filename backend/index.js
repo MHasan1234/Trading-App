@@ -17,7 +17,9 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"], // Must NOT be '*'
+  origin: ["http://localhost:3000", "http://localhost:3001",
+    "https://tradingappdashboard.onrender.com", "https://tradingappfrontend.onrender.com"
+  ], // Must NOT be '*'
   credentials: true
 }));
 app.use(cookieParser());
