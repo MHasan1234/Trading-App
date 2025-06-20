@@ -123,9 +123,9 @@ const Login = () => {
                 </button>
               </div>
               <br />
-              <div className="text-center">
+              {/* <div className="text-center">
                 Already have an account? <Link to={"/login"}>Login</Link>
-              </div>
+              </div> */}
             </form>
             <ToastContainer />
           </div>
