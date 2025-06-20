@@ -11,12 +11,12 @@ function Universe() {
 
       <div className="row mt-5">
         <div className="col-md-4 mb-4">
-          <img src="media/images/dnld/zerodhafundhouse.png" style={{ maxWidth: "200px" }} alt="Fund House" />
+          <img src="media/images/dnld/zerodhaFundhouse.png" style={{ maxWidth: "200px" }} alt="Fund House" />
           <p className="text-muted mt-2">Asset Management Venture</p>
         </div>
 
         <div className="col-md-4 mb-4">
-          <img src="media/images/dnld/sensibulllogo.svg" style={{ width: "200px", height: "auto" }} alt="Sensibull" />
+          <img src="media/images/dnld/sensibullLogo.svg" style={{ width: "200px", height: "auto" }} alt="Sensibull" />
           <p className="text-muted mt-2">Options Trading platform</p>
         </div>
 
