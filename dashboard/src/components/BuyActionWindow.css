@@ -219,3 +219,49 @@
     color: #fff;
   }
   
+  @media (max-width: 768px) {
+  .container {
+    width: 90%;
+    left: 5%;
+    height: auto;
+  }
+
+  .inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inputs fieldset {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px;
+    top: 0;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-validity {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tab button {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .header h3 {
+    font-size: 0.9rem;
+  }
+}

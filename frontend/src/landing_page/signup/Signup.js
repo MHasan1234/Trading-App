@@ -99,10 +99,11 @@ const Signup = () => {
                   value={email}
                   placeholder="Enter your email"
                   onChange={handleOnChange}
-                  className="form-control"
+                  // className="form-control"
                   required
+                  className="form-control form_input"
                   
-                  style={{ width: "500px", padding: "10px",margin: "0 auto" }}
+                 
                 />
               </div>
               <div className="mb-3 text-center">
@@ -113,9 +114,10 @@ const Signup = () => {
                   value={username}
                   placeholder="Enter your username"
                   onChange={handleOnChange}
-                   className="form-control"
+                  //  className="form-control"
                   required
-                  style={{ width: "500px", padding: "10px",margin: "0 auto" }}
+                  // style={{ width: "500px", padding: "10px",margin: "0 auto" }}
+                  className="form-control form_input"
                 />
               </div>
               <div className="mb-3 text-center">
@@ -126,13 +128,14 @@ const Signup = () => {
                   value={password}
                   placeholder="Enter your password"
                   onChange={handleOnChange}
-                   className="form-control"
+                  //  className="form-control"
                   required
-                  style={{ width: "500px", padding: "10px",margin: "0 auto" }}
+                  // style={{ width: "500px", padding: "10px",margin: "0 auto" }}
+                  className="form-control form_input"
                 />
               </div>
                <div className="d-grid justify-content-center mb-3">
-              <button type="submit" className="btn btn-primary"  style={{ width: "180px", padding: "10px" }} >Submit</button>
+              <button type="submit" className="btn btn-primary form_button"  >Submit</button>
               </div>
               <br/>
                <div className="text-center">

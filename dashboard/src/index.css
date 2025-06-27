@@ -843,3 +843,108 @@ hr {
 }
 
 
+@media (max-width: 768px) {
+  .dashboard-container,
+  .watchlist-container,
+  .topbar-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .content,
+  .watchlist-container,
+  .menu-container,
+  .indices-container {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col h5 {
+    font-size: 1.3rem;
+  }
+
+  .order-table th,
+  .order-table td {
+    font-size: 0.7rem;
+    padding: 6px 4px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .item-info span {
+    font-size: 0.7rem;
+  }
+
+  .watchlist-number {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .watchlist-number ul li {
+    display: block;
+    text-align: center;
+    border: none;
+    padding: 8px 0;
+  }
+
+  .btn,
+  .action,
+  .buy,
+  .sell {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-bottom: 6px;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    margin: 6px 0;
+  }
+
+  .menus li {
+    display: block;
+    margin: 6px 0;
+  }
+
+  .section span p {
+    font-size: 1rem;
+  }
+
+  .data {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .data hr {
+    display: none;
+  }
+}
